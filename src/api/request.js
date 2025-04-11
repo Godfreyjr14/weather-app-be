@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://localhost:5000';
+const SERVER_URL = process.env.REACT_APP_SERVER_URL || "http://localhost:5000";
 
 const request = async (url, method = 'GET', data = null) => { 
     // This function makes a request to the server
